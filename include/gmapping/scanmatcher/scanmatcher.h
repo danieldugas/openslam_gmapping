@@ -7,7 +7,7 @@
 #include <gmapping/utils/stat.h>
 #include <iostream>
 #include <gmapping/utils/gvalues.h>
-#define LASER_MAXBEAMS 2048
+#define LASER_MAXBEAMS 8192
 
 namespace GMapping {
 
