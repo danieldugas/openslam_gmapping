@@ -397,7 +397,8 @@ void GridSlamProcessor::setMotionModelParameters
 		     << "update ld=" << m_linearDistance << " ad=" << m_angularDistance << endl;
       
       
-      cerr << "Laser Pose= " << reading.getPose().x << " " << reading.getPose().y 
+      if (m_infoStream)
+      m_infoStream << "Laser Pose= " << reading.getPose().x << " " << reading.getPose().y 
 	   << " " << reading.getPose().theta << endl;
       
       
